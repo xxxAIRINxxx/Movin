@@ -11,13 +11,19 @@ UIViewPropertyAnimator based View Transition Animator
 # Document is Soon...
 
 
-## Display Movin Debug Print
+### Display Movin Debug Print
 
 ``` swift
 
 Movin.isDebugPrintEnabled = true
 
 ```
+
+## Showcase
+
+![music](images/music.gif "music")
+
+[MusicAppTransition](https://github.com/xxxAIRINxxx/MusicAppTransition)
 
 ## Requirements
 
