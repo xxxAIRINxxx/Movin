@@ -21,7 +21,7 @@ Movin.isDebugPrintEnabled = true
 
 ## Showcase
 
-![music](images/music.gif "music")
+![music](Images/music.gif "music")
 
 [MusicAppTransition](https://github.com/xxxAIRINxxx/MusicAppTransition)
 
