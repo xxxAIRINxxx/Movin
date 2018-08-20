@@ -33,12 +33,12 @@ public final class GestureTransitioning {
     
     func gesture(_ type: TransitionType) -> GestureAnimating? {
         Movin.dp("Transition - gesture type: \(type)")
-        return self.currentType().isPresenting ? self.presentingGesture : self.dismissingGesture
+        return type.isPresenting ? self.presentingGesture : self.dismissingGesture
     }
     
     func hasGesture(_ type: TransitionType) -> Bool {
         Movin.dp("Transition - hasGesture type: \(type)")
-        if self.currentType().isPresenting { return self.presentingGesture?.gesture != nil }
+        if type.isPresenting { return self.presentingGesture?.gesture != nil }
         return self.dismissingGesture?.gesture != nil
     }
     
