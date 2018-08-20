@@ -88,7 +88,7 @@ public class GestureAnimating: NSObject {
             let translatedCenterX = translation.x * self.smoothness
             self.currentProgress = translatedCenterX / self.range.width
         case .none(let parentView):
-            self.view.frame.origin = recognizer.location(in: parentView)
+            self.view.center = recognizer.location(in: parentView)
             let x = translation.x / self.range.width
             let y = translation.y / self.range.height
             self.currentProgress = max(x, y)
