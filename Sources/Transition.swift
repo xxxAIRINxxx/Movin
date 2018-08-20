@@ -97,10 +97,7 @@ open class Transition: NSObject {
     open func currentTransitionType() -> TransitionType? {
         Movin.dp("Transition - currentTransitionType")
         if let type = self.gestureTransitioning?.currentType() { return type }
-        if let type = self.animatedTransitioning?.type {
-            return type
-            
-        }
+        if let type = self.animatedTransitioning?.type { return type }
         return nil
     }
     
