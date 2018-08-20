@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Movin"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "UIViewPropertyAnimator based View Transition Animator."
   s.homepage     = "https://github.com/xxxAIRINxxx/Movin"
   s.license      = 'MIT'
