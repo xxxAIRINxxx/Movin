@@ -1,9 +1,9 @@
 # Movin
 
 [![Version](https://img.shields.io/cocoapods/v/Movin.svg?style=flat)](http://cocoadocs.org/docsets/Movin)
-[![Swift 4.1](https://img.shields.io/badge/Swift-4.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![Platforms iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](https://developer.apple.com/swift/)
-[![Xcode 9.4+](https://img.shields.io/badge/Xcode-9.4+-blue.svg?style=flat)](https://developer.apple.com/swift/)
+[![Xcode 10+](https://img.shields.io/badge/Xcode-10+-blue.svg?style=flat)](https://developer.apple.com/swift/)
 
 UIViewPropertyAnimator based View Transition Animator
 
@@ -27,7 +27,7 @@ Movin.isDebugPrintEnabled = true
 
 ## Requirements
 
-* Xcode 9.4+
+* Xcode 10+
 
 |            | OS                         | Swift         |
 |------------|------------------|--------------|
