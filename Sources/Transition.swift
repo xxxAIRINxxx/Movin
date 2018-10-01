@@ -216,7 +216,7 @@ extension Transition : UIViewControllerTransitioningDelegate {
 
 extension Transition: UINavigationControllerDelegate {
     
-    public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         Movin.dp("Transition - navigationController animationControllerFor")
         switch operation {
         case .push:
