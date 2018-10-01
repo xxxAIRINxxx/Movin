@@ -14,10 +14,13 @@ final class InteractiveAnimationViewController: UIViewController {
     @IBOutlet private weak var contentView: UIView!
     
     private var movin: Movin?
-
+    
+    private var originalFrame: CGRect = CGRect.zero
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        self.originalFrame = self.contentView.frame
         self.setup()
     }
     
@@ -30,7 +33,7 @@ final class InteractiveAnimationViewController: UIViewController {
         
         self.movin!.addAnimations([
             self.contentView.mvn.alpha.to(0.5),
-            self.contentView.mvn.point.to(CGPoint(x: 100, y: 150)),
+            self.contentView.mvn.point.from(self.originalFrame.origin).to(CGPoint(x: 100, y: 150)),
             self.contentView.mvn.cornerRadius.to(15),
             ])
         
