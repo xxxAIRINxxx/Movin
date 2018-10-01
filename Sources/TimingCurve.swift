@@ -38,7 +38,7 @@ public class TimingCurve: NSObject, UITimingCurveProvider {
         super.init()
     }
     
-    public init(curve: UIViewAnimationCurve, dampingRatio: CGFloat, initialVelocity: CGVector? = nil) {
+    public init(curve: UIView.AnimationCurve, dampingRatio: CGFloat, initialVelocity: CGVector? = nil) {
         self.timingCurveType = .composed
         self.cubicTimingParameters = UICubicTimingParameters(animationCurve: curve)
         
@@ -51,7 +51,7 @@ public class TimingCurve: NSObject, UITimingCurveProvider {
         super.init()
     }
     
-    public init(curve: UIViewAnimationCurve, damping: CGFloat, initialVelocity: CGVector, mass: CGFloat, stiffness: CGFloat) {
+    public init(curve: UIView.AnimationCurve, damping: CGFloat, initialVelocity: CGVector, mass: CGFloat, stiffness: CGFloat) {
         self.timingCurveType = .composed
         self.cubicTimingParameters = UICubicTimingParameters(animationCurve: curve)
         self.springTimingParameters = UISpringTimingParameters(mass: mass, stiffness: stiffness, damping: damping, initialVelocity: initialVelocity)

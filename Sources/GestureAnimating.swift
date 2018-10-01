@@ -27,7 +27,7 @@ public enum GestureDirectionType {
 public class GestureAnimating: NSObject {
     
     var updateGestureHandler: ((CGFloat) -> Void)?
-    var updateGestureStateHandler: ((UIGestureRecognizerState) -> Void)?
+    var updateGestureStateHandler: ((UIGestureRecognizer.State) -> Void)?
     
     public fileprivate(set) weak var view: UIView!
     public let direction: GestureDirectionType
