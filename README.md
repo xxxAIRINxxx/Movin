@@ -32,6 +32,7 @@ Movin.isDebugPrintEnabled = true
 |            | OS                         | Swift         |
 |------------|------------------|--------------|
 | **v1.0.x** | iOS 10+ | 4.1      |
+| **v1.1.x** | iOS 10+ | 4.2      |
 
 ## Installation
 
