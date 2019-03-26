@@ -37,7 +37,7 @@ public protocol AnimationCompatible: class {
 
 public extension AnimationCompatible {
     
-    @discardableResult public func delay(_ v: CGFloat) -> Self {
+    @discardableResult func delay(_ v: CGFloat) -> Self {
         self.delayFactor = v
         return self
     }
@@ -58,25 +58,25 @@ public protocol ValueAnimationCompatible: AnimationCompatible {
 
 public extension ValueAnimationCompatible {
     
-    @discardableResult public func from(_ v: Value) -> Self {
+    @discardableResult func from(_ v: Value) -> Self {
         self.fromValue = v
         return self
     }
     
-    @discardableResult public func to(_ v: Value) -> Self {
+    @discardableResult func to(_ v: Value) -> Self {
         self.toValue = v
         return self
     }
     
-    public func beforeAnimation() {
+    func beforeAnimation() {
         self.currentValue = self.fromValue
     }
     
-    public func aninmate(_ animationDirection: AnimationDirection) {
+    func aninmate(_ animationDirection: AnimationDirection) {
         self.currentValue = self.toValue
     }
     
-    public func finishAnimation(_ isFoward: Bool, _ didComplete: Bool) {
+    func finishAnimation(_ isFoward: Bool, _ didComplete: Bool) {
         if isFoward {
             self.currentValue = didComplete ? self.toValue : self.fromValue
         } else {

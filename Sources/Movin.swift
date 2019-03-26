@@ -156,7 +156,7 @@ public final class Movin {
 
 public extension Movin {
     
-    public static var isDebugPrintEnabled: Bool = false
+    static var isDebugPrintEnabled: Bool = false
     
     static func dp(_ value: Any?, key: String? = nil) {
         if !self.isDebugPrintEnabled { return }

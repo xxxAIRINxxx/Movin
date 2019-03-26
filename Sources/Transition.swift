@@ -225,6 +225,8 @@ extension Transition: UINavigationControllerDelegate {
             self.animatedTransitioning = AnimatedTransitioning(self, .pop)
         case .none:
             self.animatedTransitioning = nil
+        default:
+            self.animatedTransitioning = nil
         }
         
         return self.animatedTransitioning
